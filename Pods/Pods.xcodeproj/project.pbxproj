@@ -1,0 +1,1380 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4847ACB1E2799345AA74D9E317048D58 /* AlipaySDK-iOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 48CE3FED3E2D19C4363505B9F04916C7 /* Build configuration list for PBXAggregateTarget "AlipaySDK-iOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "AlipaySDK-iOS";
+			productName = "AlipaySDK-iOS";
+		};
+		8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4AF0DF2249DC5CF1F6B67BE5469CE54C /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = WechatOpenSDK;
+			productName = WechatOpenSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01BEB06B4E262DCEA7A94F4206311BF9 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 581A0FBDE0504B0E3FA9F6E886537AE9 /* UIRefreshControl+AFNetworking.m */; };
+		01DC2E1ABF448107A58B3A445016FC1B /* Pods-MZPayment-MZPaymentUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61319983D2182949CAAC14BA014024DB /* Pods-MZPayment-MZPaymentUITests-dummy.m */; };
+		02937E01710489D6668D0C3700E8EADA /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1878483B5395DF3CD2F9E6230D3AEAB9 /* UIProgressView+AFNetworking.m */; };
+		07E08C56386C02093F27CF28E4D01F11 /* WKWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 012B564A4A9B356E92E0E80E67513865 /* WKWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08D5C0606D6FBFB4877FC3C3FF4A2208 /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 126B5CCA65FE1D1DAA580D47A4EC8FB3 /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		133E5DFC1B4361812A47D81DA654B319 /* Pods-MZPaymentTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3831F8CF35FBC9A8D23A12F5E2DBC7DE /* Pods-MZPaymentTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		163B07BE98EAA270AF0A7AA82F84208E /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 699C15104B3E07B60E5ADB2307544AED /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		232B2E8F32708EF2D85000B997FB69A2 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = D46653972E6ABACB478DEBC0D636E24E /* UIImageView+AFNetworking.m */; };
+		2657AB4F1D04803DABFE7DDF80C0EF7F /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 3640F39EFCC3D7B6FF2CD1AC69AA53EA /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27256E913790A1EC111854E3D10E67F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2AB5C7D99BD529942B2C81AB0CD8A600 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AE548D58986EEDF39D6610C3FF1F1E06 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E7446308877A2FA6F48A7E545FFB1B1 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F612584E5B38D91E014B7FD404E16C0E /* AFNetworkReachabilityManager.m */; };
+		38B57953D8705FA2092852071CD3A462 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A6F79921FAF70C6DFAC872C7A7C43 /* UIButton+AFNetworking.m */; };
+		3CA0C9185ED4469D427AA53B26E1B18F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B7C182130DA925FF9586A1A1F079C2E /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EB561D79F76C06AA538872D6302D35D /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9172E7B8365D417E98CAA7983BB41F45 /* AFNetworking-dummy.m */; };
+		40426F061CD9B0B435C690CAFEA2BD00 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = AA57CA2DB8A73CF4ACE294CDF950E6A5 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48C315EF78C6521CDB53F083C247A362 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		4992259A954F174FA8BDB394DB1C8F93 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0D5FFC56CABD3C532CAB816FD1F2F2 /* AFAutoPurgingImageCache.m */; };
+		4FCA4E8703DBF3D3FB7D5BA06229159D /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C1F4B3A21B361C6142CD906AC2BCE98F /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E693DF13428CE251DEB1730AA1A0408 /* Pods-MZPaymentTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E662D3F83427BC88D9F06D7164A5FFC5 /* Pods-MZPaymentTests-dummy.m */; };
+		6E9A85FE924853417B3C7D7BABF690CD /* Pods-MZPayment-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41C3DF0B8F880D2249C1FE09B5E4F2CA /* Pods-MZPayment-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EE482EF823C5090378A600998A120F9 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AAC919F44F75F32872F3A84BDD276676 /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722EC0191A173ECB2121618467D32DF4 /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D301B97B8B7D05B5D2D5AF5510D576F2 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76536A816A576F08FADD3366A2E40094 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CE2887875265A33BBB7D264E36A066 /* AFURLSessionManager.m */; };
+		828919193B61FC103B8846F54EF3131C /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DBA3AFD1ACA419458A6282D26ED109 /* AFURLResponseSerialization.m */; };
+		8CE480485EFF2F15B7A394C90CFF274A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E1124ECA1344784B149815CDDA18F92 /* AFHTTPSessionManager.m */; };
+		8D060BB549FA8C46C8A5E230C7E00CFE /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 58A62A2AD2AE2DDC679A039A42028F0B /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94E9365E3664ED8A94433A1008731BBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		951B6669114E3C8D2E4961AFE2BB6647 /* WKWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = F138C1D0A799E9CC094ECD49E2650BC9 /* WKWebView+AFNetworking.m */; };
+		992D24022B5C3DD33DB02057EA756FA8 /* Pods-MZPayment-MZPaymentUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54BDBC1CE9D864656EA2827871979A0C /* Pods-MZPayment-MZPaymentUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3A67B86C6A3A1339783953B3E833B9 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBD123A4576E609B1638FAD918E31BE /* AFNetworkActivityIndicatorManager.m */; };
+		A5B3324C306C6CED272960226C855E49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A6DE5A1B478949FE0444318D47C1A9CC /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB0BC8B42AC2F28435FFD370574B2E41 /* AFSecurityPolicy.m */; };
+		A7E6C236F5C97B35484B553454B609B0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D837DE1F043C73417EDD5EC551E61796 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AECFCA2598AABAEB044F6C4594F3222F /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D82C28473462B8BF0D04D36A6F393 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4658F8495B18BD4EB5D893CAFF3BBBC /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 72460DA0B6E088CF19BCE427E10A34D5 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B83B1CA17424975882DA1066536E112B /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 90D39793C33411C250035F297D1C3C06 /* AFImageDownloader.m */; };
+		BBFB85B525E1E77FCB19C84D911205D8 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EF300FBCD7DB2D14B62A22643BC80112 /* AFURLRequestSerialization.m */; };
+		C9F701A2E6208D9E840E7A91287F21B9 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = BA51928F4B2844B1E212EB27FBB7D634 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D66716504D475B6377F7DD5C7C2BBCDE /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 079D3FEC6643F7F432A4F8B4A321FDD3 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8EB9F2CFC54AFE86B618DB528647311 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 44E70BD78434970AAE1D7B79C844AD67 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F191431A32F803DC12F12EF3B4D984BD /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 719F777FF056F2CBE16CCFAAF8CACC67 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4352388490E70C1CF187D93E390FB2A /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E40C8133FD286803014CE1A7726A92 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F90C05A56FCA81CEA821459C16F7A0AF /* Pods-MZPayment-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 459537E4EEFDCB5F80335F686DA80AC0 /* Pods-MZPayment-dummy.m */; };
+		FDA522B328C907FBF9B11C64C1A7C624 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BDC25B29797BAB64AB4E547332CBD6A /* UIActivityIndicatorView+AFNetworking.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		039D8C34605180FAD46370AA931ADEB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
+			remoteInfo = WechatOpenSDK;
+		};
+		0F875F308D189CA3CF03D1830848FEA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		4DD16540102686D0249F2031214B154E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		5ADF3C5AEF834645E9F4455EDE3C312F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4847ACB1E2799345AA74D9E317048D58;
+			remoteInfo = "AlipaySDK-iOS";
+		};
+		7FF58CE1C86BEC245058EF851749781E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8554F6236D2AA202CF58503D2DF29730;
+			remoteInfo = WechatOpenSDK;
+		};
+		D7D38CED1C4F47D3B0CE54738E0263BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBD53651007BB4BE2FD10176A774126F;
+			remoteInfo = "Pods-MZPayment";
+		};
+		F06BC1A0734C46F7E2CEAFFF85777A26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4847ACB1E2799345AA74D9E317048D58;
+			remoteInfo = "AlipaySDK-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012B564A4A9B356E92E0E80E67513865 /* WKWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WKWebView+AFNetworking.h"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		027DA206BB41EADF2913531DC6004D45 /* Pods-MZPayment-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MZPayment-acknowledgements.markdown"; sourceTree = "<group>"; };
+		03D6F68E084421A44967EA5BFA27843E /* Pods-MZPayment-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MZPayment-Info.plist"; sourceTree = "<group>"; };
+		079D3FEC6643F7F432A4F8B4A321FDD3 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		0E1124ECA1344784B149815CDDA18F92 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		10111E1DD5BA17BDB6033FBF9661B3E6 /* Pods-MZPayment-MZPaymentUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MZPayment-MZPaymentUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		126B5CCA65FE1D1DAA580D47A4EC8FB3 /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		1878483B5395DF3CD2F9E6230D3AEAB9 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		1C5BE220F0DD916ECA92190470B0DA6E /* Pods_MZPayment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZPayment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FBD123A4576E609B1638FAD918E31BE /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		24E40C8133FD286803014CE1A7726A92 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		25CE2887875265A33BBB7D264E36A066 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		354045393E03AB254E600B65ECD1C163 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		35EDF24E6DA364596706E5367A3EB78B /* AFNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.debug.xcconfig; sourceTree = "<group>"; };
+		3640F39EFCC3D7B6FF2CD1AC69AA53EA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		3831F8CF35FBC9A8D23A12F5E2DBC7DE /* Pods-MZPaymentTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MZPaymentTests-umbrella.h"; sourceTree = "<group>"; };
+		41C3DF0B8F880D2249C1FE09B5E4F2CA /* Pods-MZPayment-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MZPayment-umbrella.h"; sourceTree = "<group>"; };
+		44E70BD78434970AAE1D7B79C844AD67 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		453C731B071198506AAA7170BBFF67B2 /* Pods-MZPaymentTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MZPaymentTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		459537E4EEFDCB5F80335F686DA80AC0 /* Pods-MZPayment-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MZPayment-dummy.m"; sourceTree = "<group>"; };
+		4CBD960D14924CA593096085E3F182AF /* Pods-MZPaymentTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MZPaymentTests-Info.plist"; sourceTree = "<group>"; };
+		4CE8B5CA7D9145CD0AF7D1BC646AB52C /* Pods-MZPayment-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MZPayment-acknowledgements.plist"; sourceTree = "<group>"; };
+		54BDBC1CE9D864656EA2827871979A0C /* Pods-MZPayment-MZPaymentUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MZPayment-MZPaymentUITests-umbrella.h"; sourceTree = "<group>"; };
+		581A0FBDE0504B0E3FA9F6E886537AE9 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		5877455EEF3EE551B93084F03BA86755 /* AFNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.release.xcconfig; sourceTree = "<group>"; };
+		58A62A2AD2AE2DDC679A039A42028F0B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		5A0A6F79921FAF70C6DFAC872C7A7C43 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		5B47EC628A96C8CB28E978AE894A87E8 /* AlipaySDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		61319983D2182949CAAC14BA014024DB /* Pods-MZPayment-MZPaymentUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MZPayment-MZPaymentUITests-dummy.m"; sourceTree = "<group>"; };
+		6186F41143A6E682E83AEC16BECF696E /* Pods-MZPayment-MZPaymentUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MZPayment-MZPaymentUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		645192EF39E4B2D27F92991E44C170C5 /* Pods-MZPayment-MZPaymentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZPayment-MZPaymentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		699C15104B3E07B60E5ADB2307544AED /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		6AB9466AA20B15F20A7A24306225B85C /* WechatOpenSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.debug.xcconfig; sourceTree = "<group>"; };
+		6B0D5FFC56CABD3C532CAB816FD1F2F2 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		6EFF335A7C9BD2FD7DA30BAFEFFF1060 /* Pods-MZPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZPayment.debug.xcconfig"; sourceTree = "<group>"; };
+		719F777FF056F2CBE16CCFAAF8CACC67 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		72460DA0B6E088CF19BCE427E10A34D5 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		73DBA3AFD1ACA419458A6282D26ED109 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		7A0F5E8556E65E4C65EC31ADEC5EAA5C /* WXApiObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApiObject.h; path = OpenSDK1.8.7.1/WXApiObject.h; sourceTree = "<group>"; };
+		7B7C182130DA925FF9586A1A1F079C2E /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		7D22DE7FA088822F40C538EFFD940C41 /* Pods-MZPayment-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MZPayment-frameworks.sh"; sourceTree = "<group>"; };
+		90D39793C33411C250035F297D1C3C06 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		9172E7B8365D417E98CAA7983BB41F45 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		91C8516EFDF46AA31C483275A2C5B584 /* Pods_MZPaymentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZPaymentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BDC25B29797BAB64AB4E547332CBD6A /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		9D3900FEF594CB3A091CC92B2A3410AC /* AlipaySDK-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlipaySDK-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F9D7491C22BBF77C706F6A2F67B111A /* WechatOpenSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WechatOpenSDK.release.xcconfig; sourceTree = "<group>"; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8E52B7228EE86F36C2BB52CBE94662A /* Pods_MZPayment_MZPaymentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZPayment_MZPaymentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA57CA2DB8A73CF4ACE294CDF950E6A5 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		AAC919F44F75F32872F3A84BDD276676 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		AE548D58986EEDF39D6610C3FF1F1E06 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		AE5994565D473F6D2E9D9B4A6B101824 /* WXApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WXApi.h; path = OpenSDK1.8.7.1/WXApi.h; sourceTree = "<group>"; };
+		AE7FD33B73710EBA046BCD15A2BDCB56 /* Pods-MZPayment-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MZPayment-resources.sh"; sourceTree = "<group>"; };
+		AF547EFDF98B02571D29F5068EF75C4F /* Pods-MZPaymentTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MZPaymentTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B68EAAD92EBAE893DBB5079555E297BC /* Pods-MZPaymentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZPaymentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA51928F4B2844B1E212EB27FBB7D634 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		BAC9A4D3F70DDD8D9D89B1CC40E30C0D /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		BC6860259D7B0F7AA7B9072BF5DE8FC1 /* Pods-MZPayment-MZPaymentUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MZPayment-MZPaymentUITests-resources.sh"; sourceTree = "<group>"; };
+		C1F4B3A21B361C6142CD906AC2BCE98F /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		CA33E41D3BDE36A12EF75428C91DEA0B /* Pods-MZPayment-MZPaymentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZPayment-MZPaymentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF4EAF52502A839FBB48E0AFEE2DAEBB /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
+		D301B97B8B7D05B5D2D5AF5510D576F2 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		D46653972E6ABACB478DEBC0D636E24E /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		D473BC33C0C80865D8317F46B74C163A /* WechatAuthSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WechatAuthSDK.h; path = OpenSDK1.8.7.1/WechatAuthSDK.h; sourceTree = "<group>"; };
+		D47AC1B0F879F2C15B654E3A6E5AA3A7 /* Pods-MZPaymentTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MZPaymentTests.modulemap"; sourceTree = "<group>"; };
+		D4BDFDBF60268DE88333F72B27D996EC /* Pods-MZPayment.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MZPayment.modulemap"; sourceTree = "<group>"; };
+		D837DE1F043C73417EDD5EC551E61796 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		D8C8974352FAF6F05B2221ED3486AB34 /* Pods-MZPayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZPayment.release.xcconfig"; sourceTree = "<group>"; };
+		DB0BC8B42AC2F28435FFD370574B2E41 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DF63B4F67D8DC89D836A7E02A4D03DC0 /* Pods-MZPayment-MZPaymentUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MZPayment-MZPaymentUITests-Info.plist"; sourceTree = "<group>"; };
+		DFAEFEC124CD30C70C3607EBFC3109C6 /* Pods-MZPayment-MZPaymentUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MZPayment-MZPaymentUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E09804E281126DBB19C55C0DB9614A07 /* AlipaySDK-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "AlipaySDK-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E22D82C28473462B8BF0D04D36A6F393 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		E662D3F83427BC88D9F06D7164A5FFC5 /* Pods-MZPaymentTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MZPaymentTests-dummy.m"; sourceTree = "<group>"; };
+		EBDFE2C7F2E0346898886E3CC68500BB /* libWeChatSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeChatSDK.a; path = OpenSDK1.8.7.1/libWeChatSDK.a; sourceTree = "<group>"; };
+		EF300FBCD7DB2D14B62A22643BC80112 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		F0805A2AB4AE61E53360823D1A5AE438 /* Pods-MZPaymentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MZPaymentTests.release.xcconfig"; sourceTree = "<group>"; };
+		F138C1D0A799E9CC094ECD49E2650BC9 /* WKWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+AFNetworking.m"; path = "UIKit+AFNetworking/WKWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		F245AB1034E1AC182FFFD9D0F3A7FC47 /* Pods-MZPayment-MZPaymentUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MZPayment-MZPaymentUITests.modulemap"; sourceTree = "<group>"; };
+		F5FC91C2B64997712ECE61D3A6DD5E2F /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		F612584E5B38D91E014B7FD404E16C0E /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F9BCCCF510F65077210B8D9944565EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27256E913790A1EC111854E3D10E67F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC86076AA3ADF282DBBD133D6B87DAE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B3324C306C6CED272960226C855E49 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E779B4368187F42A9BE12F94D57B2F8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94E9365E3664ED8A94433A1008731BBB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6EF72C4A2B30D9890A265AF0711DF3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C315EF78C6521CDB53F083C247A362 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A99FE7632ED1858D7AF592366A3155D /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				3640F39EFCC3D7B6FF2CD1AC69AA53EA /* AFURLRequestSerialization.h */,
+				EF300FBCD7DB2D14B62A22643BC80112 /* AFURLRequestSerialization.m */,
+				58A62A2AD2AE2DDC679A039A42028F0B /* AFURLResponseSerialization.h */,
+				73DBA3AFD1ACA419458A6282D26ED109 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		13B88EEB2351F09E51AF3854221EF4CD /* Pods-MZPaymentTests */ = {
+			isa = PBXGroup;
+			children = (
+				D47AC1B0F879F2C15B654E3A6E5AA3A7 /* Pods-MZPaymentTests.modulemap */,
+				AF547EFDF98B02571D29F5068EF75C4F /* Pods-MZPaymentTests-acknowledgements.markdown */,
+				453C731B071198506AAA7170BBFF67B2 /* Pods-MZPaymentTests-acknowledgements.plist */,
+				E662D3F83427BC88D9F06D7164A5FFC5 /* Pods-MZPaymentTests-dummy.m */,
+				4CBD960D14924CA593096085E3F182AF /* Pods-MZPaymentTests-Info.plist */,
+				3831F8CF35FBC9A8D23A12F5E2DBC7DE /* Pods-MZPaymentTests-umbrella.h */,
+				B68EAAD92EBAE893DBB5079555E297BC /* Pods-MZPaymentTests.debug.xcconfig */,
+				F0805A2AB4AE61E53360823D1A5AE438 /* Pods-MZPaymentTests.release.xcconfig */,
+			);
+			name = "Pods-MZPaymentTests";
+			path = "Target Support Files/Pods-MZPaymentTests";
+			sourceTree = "<group>";
+		};
+		25F07665736922F2800F166CBD42A56D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AB9466AA20B15F20A7A24306225B85C /* WechatOpenSDK.debug.xcconfig */,
+				9F9D7491C22BBF77C706F6A2F67B111A /* WechatOpenSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WechatOpenSDK";
+			sourceTree = "<group>";
+		};
+		42F4E202D80BFD86BADB400203DFF19C /* Pods-MZPayment-MZPaymentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F245AB1034E1AC182FFFD9D0F3A7FC47 /* Pods-MZPayment-MZPaymentUITests.modulemap */,
+				6186F41143A6E682E83AEC16BECF696E /* Pods-MZPayment-MZPaymentUITests-acknowledgements.markdown */,
+				10111E1DD5BA17BDB6033FBF9661B3E6 /* Pods-MZPayment-MZPaymentUITests-acknowledgements.plist */,
+				61319983D2182949CAAC14BA014024DB /* Pods-MZPayment-MZPaymentUITests-dummy.m */,
+				DFAEFEC124CD30C70C3607EBFC3109C6 /* Pods-MZPayment-MZPaymentUITests-frameworks.sh */,
+				DF63B4F67D8DC89D836A7E02A4D03DC0 /* Pods-MZPayment-MZPaymentUITests-Info.plist */,
+				BC6860259D7B0F7AA7B9072BF5DE8FC1 /* Pods-MZPayment-MZPaymentUITests-resources.sh */,
+				54BDBC1CE9D864656EA2827871979A0C /* Pods-MZPayment-MZPaymentUITests-umbrella.h */,
+				CA33E41D3BDE36A12EF75428C91DEA0B /* Pods-MZPayment-MZPaymentUITests.debug.xcconfig */,
+				645192EF39E4B2D27F92991E44C170C5 /* Pods-MZPayment-MZPaymentUITests.release.xcconfig */,
+			);
+			name = "Pods-MZPayment-MZPaymentUITests";
+			path = "Target Support Files/Pods-MZPayment-MZPaymentUITests";
+			sourceTree = "<group>";
+		};
+		43A9DFCB2677B2C373E31909B86089FE /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				079D3FEC6643F7F432A4F8B4A321FDD3 /* AFNetworking.h */,
+				49309C851AC88344F685C90A23C58132 /* NSURLSession */,
+				E766120A8EEDF8A0D55EC322766EFF9B /* Reachability */,
+				A51DE22323B2A63C180B059230C2A929 /* Security */,
+				0A99FE7632ED1858D7AF592366A3155D /* Serialization */,
+				71B88CC5B87C0434C7E4084556455480 /* Support Files */,
+				94A8EFACEC6A059D62E789C177690C86 /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		49309C851AC88344F685C90A23C58132 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				24E40C8133FD286803014CE1A7726A92 /* AFCompatibilityMacros.h */,
+				BA51928F4B2844B1E212EB27FBB7D634 /* AFHTTPSessionManager.h */,
+				0E1124ECA1344784B149815CDDA18F92 /* AFHTTPSessionManager.m */,
+				D837DE1F043C73417EDD5EC551E61796 /* AFURLSessionManager.h */,
+				25CE2887875265A33BBB7D264E36A066 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		51004B304C3D7035D36A2E0491939E37 /* WechatOpenSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D473BC33C0C80865D8317F46B74C163A /* WechatAuthSDK.h */,
+				AE5994565D473F6D2E9D9B4A6B101824 /* WXApi.h */,
+				7A0F5E8556E65E4C65EC31ADEC5EAA5C /* WXApiObject.h */,
+				8EBAF5BDDD09B0A6E398927E9D6FC5D3 /* Frameworks */,
+				25F07665736922F2800F166CBD42A56D /* Support Files */,
+			);
+			path = WechatOpenSDK;
+			sourceTree = "<group>";
+		};
+		55C60088CA2E3598937243B4F37BBE6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */,
+				1C5BE220F0DD916ECA92190470B0DA6E /* Pods_MZPayment.framework */,
+				A8E52B7228EE86F36C2BB52CBE94662A /* Pods_MZPayment_MZPaymentUITests.framework */,
+				91C8516EFDF46AA31C483275A2C5B584 /* Pods_MZPaymentTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		664534A4152D8AB47C8062CDBB4B1879 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B47EC628A96C8CB28E978AE894A87E8 /* AlipaySDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		71B88CC5B87C0434C7E4084556455480 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5FC91C2B64997712ECE61D3A6DD5E2F /* AFNetworking.modulemap */,
+				9172E7B8365D417E98CAA7983BB41F45 /* AFNetworking-dummy.m */,
+				CF4EAF52502A839FBB48E0AFEE2DAEBB /* AFNetworking-Info.plist */,
+				354045393E03AB254E600B65ECD1C163 /* AFNetworking-prefix.pch */,
+				126B5CCA65FE1D1DAA580D47A4EC8FB3 /* AFNetworking-umbrella.h */,
+				35EDF24E6DA364596706E5367A3EB78B /* AFNetworking.debug.xcconfig */,
+				5877455EEF3EE551B93084F03BA86755 /* AFNetworking.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		87DD3D18E2AB923E09225F507F7F9DDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAC9A4D3F70DDD8D9D89B1CC40E30C0D /* AlipaySDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8EBAF5BDDD09B0A6E398927E9D6FC5D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBDFE2C7F2E0346898886E3CC68500BB /* libWeChatSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94A8EFACEC6A059D62E789C177690C86 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AAC919F44F75F32872F3A84BDD276676 /* AFAutoPurgingImageCache.h */,
+				6B0D5FFC56CABD3C532CAB816FD1F2F2 /* AFAutoPurgingImageCache.m */,
+				72460DA0B6E088CF19BCE427E10A34D5 /* AFImageDownloader.h */,
+				90D39793C33411C250035F297D1C3C06 /* AFImageDownloader.m */,
+				D301B97B8B7D05B5D2D5AF5510D576F2 /* AFNetworkActivityIndicatorManager.h */,
+				1FBD123A4576E609B1638FAD918E31BE /* AFNetworkActivityIndicatorManager.m */,
+				44E70BD78434970AAE1D7B79C844AD67 /* UIActivityIndicatorView+AFNetworking.h */,
+				9BDC25B29797BAB64AB4E547332CBD6A /* UIActivityIndicatorView+AFNetworking.m */,
+				AA57CA2DB8A73CF4ACE294CDF950E6A5 /* UIButton+AFNetworking.h */,
+				5A0A6F79921FAF70C6DFAC872C7A7C43 /* UIButton+AFNetworking.m */,
+				719F777FF056F2CBE16CCFAAF8CACC67 /* UIImageView+AFNetworking.h */,
+				D46653972E6ABACB478DEBC0D636E24E /* UIImageView+AFNetworking.m */,
+				C1F4B3A21B361C6142CD906AC2BCE98F /* UIKit+AFNetworking.h */,
+				7B7C182130DA925FF9586A1A1F079C2E /* UIProgressView+AFNetworking.h */,
+				1878483B5395DF3CD2F9E6230D3AEAB9 /* UIProgressView+AFNetworking.m */,
+				AE548D58986EEDF39D6610C3FF1F1E06 /* UIRefreshControl+AFNetworking.h */,
+				581A0FBDE0504B0E3FA9F6E886537AE9 /* UIRefreshControl+AFNetworking.m */,
+				012B564A4A9B356E92E0E80E67513865 /* WKWebView+AFNetworking.h */,
+				F138C1D0A799E9CC094ECD49E2650BC9 /* WKWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		A51DE22323B2A63C180B059230C2A929 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				E22D82C28473462B8BF0D04D36A6F393 /* AFSecurityPolicy.h */,
+				DB0BC8B42AC2F28435FFD370574B2E41 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		AAD2513F937B0EFB433A402343D28B14 /* Pods-MZPayment */ = {
+			isa = PBXGroup;
+			children = (
+				D4BDFDBF60268DE88333F72B27D996EC /* Pods-MZPayment.modulemap */,
+				027DA206BB41EADF2913531DC6004D45 /* Pods-MZPayment-acknowledgements.markdown */,
+				4CE8B5CA7D9145CD0AF7D1BC646AB52C /* Pods-MZPayment-acknowledgements.plist */,
+				459537E4EEFDCB5F80335F686DA80AC0 /* Pods-MZPayment-dummy.m */,
+				7D22DE7FA088822F40C538EFFD940C41 /* Pods-MZPayment-frameworks.sh */,
+				03D6F68E084421A44967EA5BFA27843E /* Pods-MZPayment-Info.plist */,
+				AE7FD33B73710EBA046BCD15A2BDCB56 /* Pods-MZPayment-resources.sh */,
+				41C3DF0B8F880D2249C1FE09B5E4F2CA /* Pods-MZPayment-umbrella.h */,
+				6EFF335A7C9BD2FD7DA30BAFEFFF1060 /* Pods-MZPayment.debug.xcconfig */,
+				D8C8974352FAF6F05B2221ED3486AB34 /* Pods-MZPayment.release.xcconfig */,
+			);
+			name = "Pods-MZPayment";
+			path = "Target Support Files/Pods-MZPayment";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				E404D249C8686E03515609F54EA6D2A9 /* Pods */,
+				55C60088CA2E3598937243B4F37BBE6D /* Products */,
+				E2F279D5E116A26DBF2F3976D95CA089 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2F279D5E116A26DBF2F3976D95CA089 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAD2513F937B0EFB433A402343D28B14 /* Pods-MZPayment */,
+				42F4E202D80BFD86BADB400203DFF19C /* Pods-MZPayment-MZPaymentUITests */,
+				13B88EEB2351F09E51AF3854221EF4CD /* Pods-MZPaymentTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E404D249C8686E03515609F54EA6D2A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43A9DFCB2677B2C373E31909B86089FE /* AFNetworking */,
+				F3E486A6194F15FBEE58227F8CCEF78C /* AlipaySDK-iOS */,
+				51004B304C3D7035D36A2E0491939E37 /* WechatOpenSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E766120A8EEDF8A0D55EC322766EFF9B /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				699C15104B3E07B60E5ADB2307544AED /* AFNetworkReachabilityManager.h */,
+				F612584E5B38D91E014B7FD404E16C0E /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		E814488E93653C3772830261469EEEA1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E09804E281126DBB19C55C0DB9614A07 /* AlipaySDK-iOS.debug.xcconfig */,
+				9D3900FEF594CB3A091CC92B2A3410AC /* AlipaySDK-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AlipaySDK-iOS";
+			sourceTree = "<group>";
+		};
+		F3E486A6194F15FBEE58227F8CCEF78C /* AlipaySDK-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				87DD3D18E2AB923E09225F507F7F9DDB /* Frameworks */,
+				664534A4152D8AB47C8062CDBB4B1879 /* Resources */,
+				E814488E93653C3772830261469EEEA1 /* Support Files */,
+			);
+			path = "AlipaySDK-iOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		974DFBC3D99DD0E14719BB9F08453EC0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				133E5DFC1B4361812A47D81DA654B319 /* Pods-MZPaymentTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98A11FE928547ACB9D3C6B5E1BDDAFDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E9A85FE924853417B3C7D7BABF690CD /* Pods-MZPayment-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9ECBAE3144164158FDC62D90C3CEFDB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EE482EF823C5090378A600998A120F9 /* AFAutoPurgingImageCache.h in Headers */,
+				F4352388490E70C1CF187D93E390FB2A /* AFCompatibilityMacros.h in Headers */,
+				C9F701A2E6208D9E840E7A91287F21B9 /* AFHTTPSessionManager.h in Headers */,
+				B4658F8495B18BD4EB5D893CAFF3BBBC /* AFImageDownloader.h in Headers */,
+				722EC0191A173ECB2121618467D32DF4 /* AFNetworkActivityIndicatorManager.h in Headers */,
+				08D5C0606D6FBFB4877FC3C3FF4A2208 /* AFNetworking-umbrella.h in Headers */,
+				D66716504D475B6377F7DD5C7C2BBCDE /* AFNetworking.h in Headers */,
+				163B07BE98EAA270AF0A7AA82F84208E /* AFNetworkReachabilityManager.h in Headers */,
+				AECFCA2598AABAEB044F6C4594F3222F /* AFSecurityPolicy.h in Headers */,
+				2657AB4F1D04803DABFE7DDF80C0EF7F /* AFURLRequestSerialization.h in Headers */,
+				8D060BB549FA8C46C8A5E230C7E00CFE /* AFURLResponseSerialization.h in Headers */,
+				A7E6C236F5C97B35484B553454B609B0 /* AFURLSessionManager.h in Headers */,
+				E8EB9F2CFC54AFE86B618DB528647311 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				40426F061CD9B0B435C690CAFEA2BD00 /* UIButton+AFNetworking.h in Headers */,
+				F191431A32F803DC12F12EF3B4D984BD /* UIImageView+AFNetworking.h in Headers */,
+				4FCA4E8703DBF3D3FB7D5BA06229159D /* UIKit+AFNetworking.h in Headers */,
+				3CA0C9185ED4469D427AA53B26E1B18F /* UIProgressView+AFNetworking.h in Headers */,
+				2AB5C7D99BD529942B2C81AB0CD8A600 /* UIRefreshControl+AFNetworking.h in Headers */,
+				07E08C56386C02093F27CF28E4D01F11 /* WKWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C78CA2C1788F1BFC3A7F0A154C2F688D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				992D24022B5C3DD33DB02057EA756FA8 /* Pods-MZPayment-MZPaymentUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A4B40CB38ADC88749D1E1C8A945364 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				B9ECBAE3144164158FDC62D90C3CEFDB /* Headers */,
+				6F66130117A5CA2EFE69F1739F512499 /* Sources */,
+				8F9BCCCF510F65077210B8D9944565EC /* Frameworks */,
+				5AAFF4E9A7FD5CC955CC94BDE27FBA95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DBD53651007BB4BE2FD10176A774126F /* Pods-MZPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F38769FEEEFEDB5FBEAE5C9F4166A1A4 /* Build configuration list for PBXNativeTarget "Pods-MZPayment" */;
+			buildPhases = (
+				98A11FE928547ACB9D3C6B5E1BDDAFDE /* Headers */,
+				A825F63F780B9FC034A2D2C8B86CD816 /* Sources */,
+				E779B4368187F42A9BE12F94D57B2F8E /* Frameworks */,
+				820176DBF1495A78C076F44BD5D0F5E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC9C98B0AE775A7DAFE09A634451F8D6 /* PBXTargetDependency */,
+				5AABCB85B617D0A21FD7EEFF04F2EE42 /* PBXTargetDependency */,
+				2CB472A9E23460A31F57A332A855C190 /* PBXTargetDependency */,
+			);
+			name = "Pods-MZPayment";
+			productName = "Pods-MZPayment";
+			productReference = 1C5BE220F0DD916ECA92190470B0DA6E /* Pods_MZPayment.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E092F2A2430CB7AE8EA4A52F9D6E15A8 /* Pods-MZPayment-MZPaymentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF83557EE8C4FC10978B62C03B458E5 /* Build configuration list for PBXNativeTarget "Pods-MZPayment-MZPaymentUITests" */;
+			buildPhases = (
+				C78CA2C1788F1BFC3A7F0A154C2F688D /* Headers */,
+				983297BFA659AF00101DF9D02DCF5E12 /* Sources */,
+				F6EF72C4A2B30D9890A265AF0711DF3B /* Frameworks */,
+				B9C132B37812EE44B3BFB4C8143259DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D086B8E60412F28D1052A7F0EC57CBFA /* PBXTargetDependency */,
+				EEDA54B01A8C679F3A6DB59FBB922507 /* PBXTargetDependency */,
+				C48A4184926EE01F92939DF27274F5A4 /* PBXTargetDependency */,
+			);
+			name = "Pods-MZPayment-MZPaymentUITests";
+			productName = "Pods-MZPayment-MZPaymentUITests";
+			productReference = A8E52B7228EE86F36C2BB52CBE94662A /* Pods_MZPayment_MZPaymentUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB8E109B5805F666D2816336C55FB26D /* Pods-MZPaymentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6157252FFBF330F88DC0BA1069E1D856 /* Build configuration list for PBXNativeTarget "Pods-MZPaymentTests" */;
+			buildPhases = (
+				974DFBC3D99DD0E14719BB9F08453EC0 /* Headers */,
+				D3A1913F9C6F15C7A386FA36847F797A /* Sources */,
+				AC86076AA3ADF282DBBD133D6B87DAE9 /* Frameworks */,
+				8D80A1159551DBD0EF5D4865A1F95829 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45FFC47BFC4B647B19416BABD54C5ADB /* PBXTargetDependency */,
+			);
+			name = "Pods-MZPaymentTests";
+			productName = "Pods-MZPaymentTests";
+			productReference = 91C8516EFDF46AA31C483275A2C5B584 /* Pods_MZPaymentTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 55C60088CA2E3598937243B4F37BBE6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */,
+				4847ACB1E2799345AA74D9E317048D58 /* AlipaySDK-iOS */,
+				DBD53651007BB4BE2FD10176A774126F /* Pods-MZPayment */,
+				E092F2A2430CB7AE8EA4A52F9D6E15A8 /* Pods-MZPayment-MZPaymentUITests */,
+				EB8E109B5805F666D2816336C55FB26D /* Pods-MZPaymentTests */,
+				8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5AAFF4E9A7FD5CC955CC94BDE27FBA95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		820176DBF1495A78C076F44BD5D0F5E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D80A1159551DBD0EF5D4865A1F95829 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9C132B37812EE44B3BFB4C8143259DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F66130117A5CA2EFE69F1739F512499 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4992259A954F174FA8BDB394DB1C8F93 /* AFAutoPurgingImageCache.m in Sources */,
+				8CE480485EFF2F15B7A394C90CFF274A /* AFHTTPSessionManager.m in Sources */,
+				B83B1CA17424975882DA1066536E112B /* AFImageDownloader.m in Sources */,
+				9D3A67B86C6A3A1339783953B3E833B9 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				3EB561D79F76C06AA538872D6302D35D /* AFNetworking-dummy.m in Sources */,
+				2E7446308877A2FA6F48A7E545FFB1B1 /* AFNetworkReachabilityManager.m in Sources */,
+				A6DE5A1B478949FE0444318D47C1A9CC /* AFSecurityPolicy.m in Sources */,
+				BBFB85B525E1E77FCB19C84D911205D8 /* AFURLRequestSerialization.m in Sources */,
+				828919193B61FC103B8846F54EF3131C /* AFURLResponseSerialization.m in Sources */,
+				76536A816A576F08FADD3366A2E40094 /* AFURLSessionManager.m in Sources */,
+				FDA522B328C907FBF9B11C64C1A7C624 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				38B57953D8705FA2092852071CD3A462 /* UIButton+AFNetworking.m in Sources */,
+				232B2E8F32708EF2D85000B997FB69A2 /* UIImageView+AFNetworking.m in Sources */,
+				02937E01710489D6668D0C3700E8EADA /* UIProgressView+AFNetworking.m in Sources */,
+				01BEB06B4E262DCEA7A94F4206311BF9 /* UIRefreshControl+AFNetworking.m in Sources */,
+				951B6669114E3C8D2E4961AFE2BB6647 /* WKWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		983297BFA659AF00101DF9D02DCF5E12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01DC2E1ABF448107A58B3A445016FC1B /* Pods-MZPayment-MZPaymentUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A825F63F780B9FC034A2D2C8B86CD816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F90C05A56FCA81CEA821459C16F7A0AF /* Pods-MZPayment-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A1913F9C6F15C7A386FA36847F797A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E693DF13428CE251DEB1730AA1A0408 /* Pods-MZPaymentTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CB472A9E23460A31F57A332A855C190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WechatOpenSDK;
+			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
+			targetProxy = 039D8C34605180FAD46370AA931ADEB5 /* PBXContainerItemProxy */;
+		};
+		45FFC47BFC4B647B19416BABD54C5ADB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MZPayment";
+			target = DBD53651007BB4BE2FD10176A774126F /* Pods-MZPayment */;
+			targetProxy = D7D38CED1C4F47D3B0CE54738E0263BC /* PBXContainerItemProxy */;
+		};
+		5AABCB85B617D0A21FD7EEFF04F2EE42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AlipaySDK-iOS";
+			target = 4847ACB1E2799345AA74D9E317048D58 /* AlipaySDK-iOS */;
+			targetProxy = F06BC1A0734C46F7E2CEAFFF85777A26 /* PBXContainerItemProxy */;
+		};
+		AC9C98B0AE775A7DAFE09A634451F8D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = 0F875F308D189CA3CF03D1830848FEA7 /* PBXContainerItemProxy */;
+		};
+		C48A4184926EE01F92939DF27274F5A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WechatOpenSDK;
+			target = 8554F6236D2AA202CF58503D2DF29730 /* WechatOpenSDK */;
+			targetProxy = 7FF58CE1C86BEC245058EF851749781E /* PBXContainerItemProxy */;
+		};
+		D086B8E60412F28D1052A7F0EC57CBFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = 4DD16540102686D0249F2031214B154E /* PBXContainerItemProxy */;
+		};
+		EEDA54B01A8C679F3A6DB59FBB922507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AlipaySDK-iOS";
+			target = 4847ACB1E2799345AA74D9E317048D58 /* AlipaySDK-iOS */;
+			targetProxy = 5ADF3C5AEF834645E9F4455EDE3C312F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3FAA1F98CD47DA0DFA3F33F70F4DA0B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B68EAAD92EBAE893DBB5079555E297BC /* Pods-MZPaymentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MZPaymentTests/Pods-MZPaymentTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MZPaymentTests/Pods-MZPaymentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4883D772C8A6C019ADF4E4516FD08179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645192EF39E4B2D27F92991E44C170C5 /* Pods-MZPayment-MZPaymentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		522F2253F297B12BF3593BA5E60C5EC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EFF335A7C9BD2FD7DA30BAFEFFF1060 /* Pods-MZPayment.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MZPayment/Pods-MZPayment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MZPayment/Pods-MZPayment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5998B91A596181633EDAD10D83743E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0805A2AB4AE61E53360823D1A5AE438 /* Pods-MZPaymentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MZPaymentTests/Pods-MZPaymentTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MZPaymentTests/Pods-MZPaymentTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F105DE130E7C58EB2BB2D3D56345DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6910ABAAEC43DE37BCC68FB10625B51B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB9466AA20B15F20A7A24306225B85C /* WechatOpenSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84C58B518D43C3D8F8F5FC5FA93CDEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EDF24E6DA364596706E5367A3EB78B /* AFNetworking.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A0F052D5A8EE05A7189E03812B02B500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D3900FEF594CB3A091CC92B2A3410AC /* AlipaySDK-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2DB3C5A5BF6E2BA8A7A8E0178051515 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E09804E281126DBB19C55C0DB9614A07 /* AlipaySDK-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB9B38139C5627437C662CCBEFC5D805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BD3A69076C1B8ED0EB8EED8E9254F409 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5877455EEF3EE551B93084F03BA86755 /* AFNetworking.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C300D658D253E3D7F5E4AE6DF9BD5A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F9D7491C22BBF77C706F6A2F67B111A /* WechatOpenSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C71C50AB4208E29D07B22A8D4EC593B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C8974352FAF6F05B2221ED3486AB34 /* Pods-MZPayment.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MZPayment/Pods-MZPayment-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MZPayment/Pods-MZPayment.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC9CFAFA6E0503C5A61CD4B39A073B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA33E41D3BDE36A12EF75428C91DEA0B /* Pods-MZPayment-MZPaymentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AF83557EE8C4FC10978B62C03B458E5 /* Build configuration list for PBXNativeTarget "Pods-MZPayment-MZPaymentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC9CFAFA6E0503C5A61CD4B39A073B82 /* Debug */,
+				4883D772C8A6C019ADF4E4516FD08179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F105DE130E7C58EB2BB2D3D56345DEF /* Debug */,
+				AB9B38139C5627437C662CCBEFC5D805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48CE3FED3E2D19C4363505B9F04916C7 /* Build configuration list for PBXAggregateTarget "AlipaySDK-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2DB3C5A5BF6E2BA8A7A8E0178051515 /* Debug */,
+				A0F052D5A8EE05A7189E03812B02B500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF0DF2249DC5CF1F6B67BE5469CE54C /* Build configuration list for PBXAggregateTarget "WechatOpenSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6910ABAAEC43DE37BCC68FB10625B51B /* Debug */,
+				C300D658D253E3D7F5E4AE6DF9BD5A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6157252FFBF330F88DC0BA1069E1D856 /* Build configuration list for PBXNativeTarget "Pods-MZPaymentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FAA1F98CD47DA0DFA3F33F70F4DA0B2 /* Debug */,
+				5998B91A596181633EDAD10D83743E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A4B40CB38ADC88749D1E1C8A945364 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C58B518D43C3D8F8F5FC5FA93CDEB7 /* Debug */,
+				BD3A69076C1B8ED0EB8EED8E9254F409 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F38769FEEEFEDB5FBEAE5C9F4166A1A4 /* Build configuration list for PBXNativeTarget "Pods-MZPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				522F2253F297B12BF3593BA5E60C5EC0 /* Debug */,
+				C71C50AB4208E29D07B22A8D4EC593B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

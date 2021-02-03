@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E9EBFDF41E9B16C75B97C95 /* Pods_MZPayment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50DB4BBFAA7F9DAF0EA527DB /* Pods_MZPayment.framework */; };
+		4A5D55BDA916D048C4D83D54 /* Pods_MZPaymentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9C09B427C1C47C1E3DD3B64 /* Pods_MZPaymentTests.framework */; };
+		B45C9AE225A300A800C510BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9AE125A300A800C510BC /* AppDelegate.m */; };
+		B45C9AE525A300A800C510BC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9AE425A300A800C510BC /* SceneDelegate.m */; };
+		B45C9AE825A300A800C510BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9AE725A300A800C510BC /* ViewController.m */; };
+		B45C9AEB25A300A800C510BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45C9AE925A300A800C510BC /* Main.storyboard */; };
+		B45C9AED25A300BE00C510BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B45C9AEC25A300BE00C510BC /* Assets.xcassets */; };
+		B45C9AF025A300BE00C510BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B45C9AEE25A300BE00C510BC /* LaunchScreen.storyboard */; };
+		B45C9AF325A300BE00C510BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9AF225A300BE00C510BC /* main.m */; };
+		B45C9AFD25A300BE00C510BC /* MZPaymentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9AFC25A300BE00C510BC /* MZPaymentTests.m */; };
+		B45C9B0825A300BE00C510BC /* MZPaymentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9B0725A300BE00C510BC /* MZPaymentUITests.m */; };
+		B45C9B4525A3075A00C510BC /* MZPaymentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9B4325A3075A00C510BC /* MZPaymentManager.m */; };
+		B45C9B4B25A3081E00C510BC /* MZPaymentStyleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9B4A25A3081E00C510BC /* MZPaymentStyleCell.m */; };
+		B45C9B6325A309E300C510BC /* MZPaymentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B45C9B6225A309E300C510BC /* MZPaymentVC.m */; };
+		BFD9F8EA868F99727B8E1778 /* Pods_MZPayment_MZPaymentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F55870C8A25FDF631736760 /* Pods_MZPayment_MZPaymentUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B45C9AF925A300BE00C510BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B45C9AD525A300A800C510BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B45C9ADC25A300A800C510BC;
+			remoteInfo = MZPayment;
+		};
+		B45C9B0425A300BE00C510BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B45C9AD525A300A800C510BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B45C9ADC25A300A800C510BC;
+			remoteInfo = MZPayment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		126B00FE88A4EAEA6B86456D /* Pods-MZPaymentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZPaymentTests.release.xcconfig"; path = "Target Support Files/Pods-MZPaymentTests/Pods-MZPaymentTests.release.xcconfig"; sourceTree = "<group>"; };
+		148014650302D5C02E3AC351 /* Pods-MZPayment-MZPaymentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZPayment-MZPaymentUITests.debug.xcconfig"; path = "Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F55870C8A25FDF631736760 /* Pods_MZPayment_MZPaymentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZPayment_MZPaymentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DB4BBFAA7F9DAF0EA527DB /* Pods_MZPayment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZPayment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		664385E1A28C779481999F06 /* Pods-MZPaymentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZPaymentTests.debug.xcconfig"; path = "Target Support Files/Pods-MZPaymentTests/Pods-MZPaymentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B45C9ADD25A300A800C510BC /* MZPayment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZPayment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45C9AE025A300A800C510BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B45C9AE125A300A800C510BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B45C9AE325A300A800C510BC /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		B45C9AE425A300A800C510BC /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		B45C9AE625A300A800C510BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B45C9AE725A300A800C510BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B45C9AEA25A300A800C510BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B45C9AEC25A300BE00C510BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B45C9AEF25A300BE00C510BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B45C9AF125A300BE00C510BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45C9AF225A300BE00C510BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B45C9AF825A300BE00C510BC /* MZPaymentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZPaymentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45C9AFC25A300BE00C510BC /* MZPaymentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZPaymentTests.m; sourceTree = "<group>"; };
+		B45C9AFE25A300BE00C510BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45C9B0325A300BE00C510BC /* MZPaymentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MZPaymentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45C9B0725A300BE00C510BC /* MZPaymentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZPaymentUITests.m; sourceTree = "<group>"; };
+		B45C9B0925A300BE00C510BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B45C9B4125A3075A00C510BC /* MZPaymentConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZPaymentConfig.h; sourceTree = "<group>"; };
+		B45C9B4225A3075A00C510BC /* MZPaymentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZPaymentManager.h; sourceTree = "<group>"; };
+		B45C9B4325A3075A00C510BC /* MZPaymentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZPaymentManager.m; sourceTree = "<group>"; };
+		B45C9B4925A3081E00C510BC /* MZPaymentStyleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZPaymentStyleCell.h; sourceTree = "<group>"; };
+		B45C9B4A25A3081E00C510BC /* MZPaymentStyleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZPaymentStyleCell.m; sourceTree = "<group>"; };
+		B45C9B6125A309E300C510BC /* MZPaymentVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MZPaymentVC.h; sourceTree = "<group>"; };
+		B45C9B6225A309E300C510BC /* MZPaymentVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MZPaymentVC.m; sourceTree = "<group>"; };
+		B5F59034AC8324FB22C765A8 /* Pods-MZPayment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZPayment.debug.xcconfig"; path = "Target Support Files/Pods-MZPayment/Pods-MZPayment.debug.xcconfig"; sourceTree = "<group>"; };
+		E9C09B427C1C47C1E3DD3B64 /* Pods_MZPaymentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MZPaymentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41B79B09973165FE38377B3 /* Pods-MZPayment-MZPaymentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZPayment-MZPaymentUITests.release.xcconfig"; path = "Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC8FC259B85A416BA8A03D4E /* Pods-MZPayment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MZPayment.release.xcconfig"; path = "Target Support Files/Pods-MZPayment/Pods-MZPayment.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B45C9ADA25A300A800C510BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E9EBFDF41E9B16C75B97C95 /* Pods_MZPayment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45C9AF525A300BE00C510BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A5D55BDA916D048C4D83D54 /* Pods_MZPaymentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45C9B0025A300BE00C510BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFD9F8EA868F99727B8E1778 /* Pods_MZPayment_MZPaymentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81BAD67F16A52EEEB95DCFEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50DB4BBFAA7F9DAF0EA527DB /* Pods_MZPayment.framework */,
+				3F55870C8A25FDF631736760 /* Pods_MZPayment_MZPaymentUITests.framework */,
+				E9C09B427C1C47C1E3DD3B64 /* Pods_MZPaymentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B45C9AD425A300A800C510BC = {
+			isa = PBXGroup;
+			children = (
+				B45C9ADF25A300A800C510BC /* MZPayment */,
+				B45C9AFB25A300BE00C510BC /* MZPaymentTests */,
+				B45C9B0625A300BE00C510BC /* MZPaymentUITests */,
+				B45C9ADE25A300A800C510BC /* Products */,
+				BE947D8B22C79B575F083C17 /* Pods */,
+				81BAD67F16A52EEEB95DCFEA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B45C9ADE25A300A800C510BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B45C9ADD25A300A800C510BC /* MZPayment.app */,
+				B45C9AF825A300BE00C510BC /* MZPaymentTests.xctest */,
+				B45C9B0325A300BE00C510BC /* MZPaymentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B45C9ADF25A300A800C510BC /* MZPayment */ = {
+			isa = PBXGroup;
+			children = (
+				B45C9B4425A3075A00C510BC /* Controller */,
+				B45C9B4025A3075A00C510BC /* MZPaymentManager */,
+				B45C9B3F25A3075A00C510BC /* View */,
+				B45C9AE025A300A800C510BC /* AppDelegate.h */,
+				B45C9AE125A300A800C510BC /* AppDelegate.m */,
+				B45C9AE325A300A800C510BC /* SceneDelegate.h */,
+				B45C9AE425A300A800C510BC /* SceneDelegate.m */,
+				B45C9AE625A300A800C510BC /* ViewController.h */,
+				B45C9AE725A300A800C510BC /* ViewController.m */,
+				B45C9AE925A300A800C510BC /* Main.storyboard */,
+				B45C9AEC25A300BE00C510BC /* Assets.xcassets */,
+				B45C9AEE25A300BE00C510BC /* LaunchScreen.storyboard */,
+				B45C9AF125A300BE00C510BC /* Info.plist */,
+				B45C9AF225A300BE00C510BC /* main.m */,
+			);
+			path = MZPayment;
+			sourceTree = "<group>";
+		};
+		B45C9AFB25A300BE00C510BC /* MZPaymentTests */ = {
+			isa = PBXGroup;
+			children = (
+				B45C9AFC25A300BE00C510BC /* MZPaymentTests.m */,
+				B45C9AFE25A300BE00C510BC /* Info.plist */,
+			);
+			path = MZPaymentTests;
+			sourceTree = "<group>";
+		};
+		B45C9B0625A300BE00C510BC /* MZPaymentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B45C9B0725A300BE00C510BC /* MZPaymentUITests.m */,
+				B45C9B0925A300BE00C510BC /* Info.plist */,
+			);
+			path = MZPaymentUITests;
+			sourceTree = "<group>";
+		};
+		B45C9B3F25A3075A00C510BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B45C9B4925A3081E00C510BC /* MZPaymentStyleCell.h */,
+				B45C9B4A25A3081E00C510BC /* MZPaymentStyleCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B45C9B4025A3075A00C510BC /* MZPaymentManager */ = {
+			isa = PBXGroup;
+			children = (
+				B45C9B4125A3075A00C510BC /* MZPaymentConfig.h */,
+				B45C9B4225A3075A00C510BC /* MZPaymentManager.h */,
+				B45C9B4325A3075A00C510BC /* MZPaymentManager.m */,
+			);
+			path = MZPaymentManager;
+			sourceTree = "<group>";
+		};
+		B45C9B4425A3075A00C510BC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B45C9B6125A309E300C510BC /* MZPaymentVC.h */,
+				B45C9B6225A309E300C510BC /* MZPaymentVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BE947D8B22C79B575F083C17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5F59034AC8324FB22C765A8 /* Pods-MZPayment.debug.xcconfig */,
+				FC8FC259B85A416BA8A03D4E /* Pods-MZPayment.release.xcconfig */,
+				148014650302D5C02E3AC351 /* Pods-MZPayment-MZPaymentUITests.debug.xcconfig */,
+				F41B79B09973165FE38377B3 /* Pods-MZPayment-MZPaymentUITests.release.xcconfig */,
+				664385E1A28C779481999F06 /* Pods-MZPaymentTests.debug.xcconfig */,
+				126B00FE88A4EAEA6B86456D /* Pods-MZPaymentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B45C9ADC25A300A800C510BC /* MZPayment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B45C9B0C25A300BE00C510BC /* Build configuration list for PBXNativeTarget "MZPayment" */;
+			buildPhases = (
+				EAF2C752C59439356A5852BE /* [CP] Check Pods Manifest.lock */,
+				B45C9AD925A300A800C510BC /* Sources */,
+				B45C9ADA25A300A800C510BC /* Frameworks */,
+				B45C9ADB25A300A800C510BC /* Resources */,
+				3F1D497A82D31B16BB3C7D87 /* [CP] Embed Pods Frameworks */,
+				5DCEABACCA34932EA8785AE1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MZPayment;
+			productName = MZPayment;
+			productReference = B45C9ADD25A300A800C510BC /* MZPayment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B45C9AF725A300BE00C510BC /* MZPaymentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B45C9B0F25A300BE00C510BC /* Build configuration list for PBXNativeTarget "MZPaymentTests" */;
+			buildPhases = (
+				3917607FE56F159A52E16E88 /* [CP] Check Pods Manifest.lock */,
+				B45C9AF425A300BE00C510BC /* Sources */,
+				B45C9AF525A300BE00C510BC /* Frameworks */,
+				B45C9AF625A300BE00C510BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B45C9AFA25A300BE00C510BC /* PBXTargetDependency */,
+			);
+			name = MZPaymentTests;
+			productName = MZPaymentTests;
+			productReference = B45C9AF825A300BE00C510BC /* MZPaymentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B45C9B0225A300BE00C510BC /* MZPaymentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B45C9B1225A300BE00C510BC /* Build configuration list for PBXNativeTarget "MZPaymentUITests" */;
+			buildPhases = (
+				46000320A5BE7C83E3F40E40 /* [CP] Check Pods Manifest.lock */,
+				B45C9AFF25A300BE00C510BC /* Sources */,
+				B45C9B0025A300BE00C510BC /* Frameworks */,
+				B45C9B0125A300BE00C510BC /* Resources */,
+				34B51A2F41622081292DCC49 /* [CP] Embed Pods Frameworks */,
+				F001B37415477F61F8D9A1CC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B45C9B0525A300BE00C510BC /* PBXTargetDependency */,
+			);
+			name = MZPaymentUITests;
+			productName = MZPaymentUITests;
+			productReference = B45C9B0325A300BE00C510BC /* MZPaymentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B45C9AD525A300A800C510BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					B45C9ADC25A300A800C510BC = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					B45C9AF725A300BE00C510BC = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B45C9ADC25A300A800C510BC;
+					};
+					B45C9B0225A300BE00C510BC = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = B45C9ADC25A300A800C510BC;
+					};
+				};
+			};
+			buildConfigurationList = B45C9AD825A300A800C510BC /* Build configuration list for PBXProject "MZPayment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B45C9AD425A300A800C510BC;
+			productRefGroup = B45C9ADE25A300A800C510BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B45C9ADC25A300A800C510BC /* MZPayment */,
+				B45C9AF725A300BE00C510BC /* MZPaymentTests */,
+				B45C9B0225A300BE00C510BC /* MZPaymentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B45C9ADB25A300A800C510BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45C9AF025A300BE00C510BC /* LaunchScreen.storyboard in Resources */,
+				B45C9AED25A300BE00C510BC /* Assets.xcassets in Resources */,
+				B45C9AEB25A300A800C510BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45C9AF625A300BE00C510BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45C9B0125A300BE00C510BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34B51A2F41622081292DCC49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3917607FE56F159A52E16E88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MZPaymentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F1D497A82D31B16BB3C7D87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MZPayment/Pods-MZPayment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MZPayment/Pods-MZPayment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MZPayment/Pods-MZPayment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46000320A5BE7C83E3F40E40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MZPayment-MZPaymentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5DCEABACCA34932EA8785AE1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MZPayment/Pods-MZPayment-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MZPayment/Pods-MZPayment-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MZPayment/Pods-MZPayment-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAF2C752C59439356A5852BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MZPayment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F001B37415477F61F8D9A1CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MZPayment-MZPaymentUITests/Pods-MZPayment-MZPaymentUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B45C9AD925A300A800C510BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45C9B4525A3075A00C510BC /* MZPaymentManager.m in Sources */,
+				B45C9AE825A300A800C510BC /* ViewController.m in Sources */,
+				B45C9AE225A300A800C510BC /* AppDelegate.m in Sources */,
+				B45C9B4B25A3081E00C510BC /* MZPaymentStyleCell.m in Sources */,
+				B45C9B6325A309E300C510BC /* MZPaymentVC.m in Sources */,
+				B45C9AF325A300BE00C510BC /* main.m in Sources */,
+				B45C9AE525A300A800C510BC /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45C9AF425A300BE00C510BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45C9AFD25A300BE00C510BC /* MZPaymentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B45C9AFF25A300BE00C510BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B45C9B0825A300BE00C510BC /* MZPaymentUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B45C9AFA25A300BE00C510BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B45C9ADC25A300A800C510BC /* MZPayment */;
+			targetProxy = B45C9AF925A300BE00C510BC /* PBXContainerItemProxy */;
+		};
+		B45C9B0525A300BE00C510BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B45C9ADC25A300A800C510BC /* MZPayment */;
+			targetProxy = B45C9B0425A300BE00C510BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B45C9AE925A300A800C510BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45C9AEA25A300A800C510BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B45C9AEE25A300BE00C510BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B45C9AEF25A300BE00C510BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B45C9B0A25A300BE00C510BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B45C9B0B25A300BE00C510BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B45C9B0D25A300BE00C510BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F59034AC8324FB22C765A8 /* Pods-MZPayment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GKD84VMPR;
+				INFOPLIST_FILE = MZPayment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.git.mz.MZPayment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B45C9B0E25A300BE00C510BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC8FC259B85A416BA8A03D4E /* Pods-MZPayment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GKD84VMPR;
+				INFOPLIST_FILE = MZPayment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.git.mz.MZPayment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B45C9B1025A300BE00C510BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 664385E1A28C779481999F06 /* Pods-MZPaymentTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GKD84VMPR;
+				INFOPLIST_FILE = MZPaymentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.git.mz.MZPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZPayment.app/MZPayment";
+			};
+			name = Debug;
+		};
+		B45C9B1125A300BE00C510BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 126B00FE88A4EAEA6B86456D /* Pods-MZPaymentTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GKD84VMPR;
+				INFOPLIST_FILE = MZPaymentTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.git.mz.MZPaymentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MZPayment.app/MZPayment";
+			};
+			name = Release;
+		};
+		B45C9B1325A300BE00C510BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148014650302D5C02E3AC351 /* Pods-MZPayment-MZPaymentUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GKD84VMPR;
+				INFOPLIST_FILE = MZPaymentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.git.mz.MZPaymentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MZPayment;
+			};
+			name = Debug;
+		};
+		B45C9B1425A300BE00C510BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F41B79B09973165FE38377B3 /* Pods-MZPayment-MZPaymentUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GKD84VMPR;
+				INFOPLIST_FILE = MZPaymentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.git.mz.MZPaymentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MZPayment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B45C9AD825A300A800C510BC /* Build configuration list for PBXProject "MZPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45C9B0A25A300BE00C510BC /* Debug */,
+				B45C9B0B25A300BE00C510BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B45C9B0C25A300BE00C510BC /* Build configuration list for PBXNativeTarget "MZPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45C9B0D25A300BE00C510BC /* Debug */,
+				B45C9B0E25A300BE00C510BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B45C9B0F25A300BE00C510BC /* Build configuration list for PBXNativeTarget "MZPaymentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45C9B1025A300BE00C510BC /* Debug */,
+				B45C9B1125A300BE00C510BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B45C9B1225A300BE00C510BC /* Build configuration list for PBXNativeTarget "MZPaymentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B45C9B1325A300BE00C510BC /* Debug */,
+				B45C9B1425A300BE00C510BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B45C9AD525A300A800C510BC /* Project object */;
+}

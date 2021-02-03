@@ -1,0 +1,6 @@
+framework module Pods_MZPayment_MZPaymentUITests {
+  umbrella header "Pods-MZPayment-MZPaymentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
