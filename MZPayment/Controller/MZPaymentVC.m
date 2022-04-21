@@ -59,9 +59,10 @@ typedef NS_ENUM(NSInteger, MZPaymentStyle) {
     [self setupFooterView];
 }
 
+#pragma mark - UI
 - (void)setupUI {
-    [self.tableView registerClass:[MZPaymentStyleCell class] forCellReuseIdentifier:@"paymentStyleCellId"];
     self.tableView.frame = self.view.bounds;
+    [self.tableView registerClass:[MZPaymentStyleCell class] forCellReuseIdentifier:@"paymentStyleCellId"];
     [self.view addSubview:self.tableView];
 }
 
@@ -79,18 +80,49 @@ typedef NS_ENUM(NSInteger, MZPaymentStyle) {
 - (void)setupFooterView {
     UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 200.0)];
     UIButton *sureBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    sureBtn.frame = CGRectMake(60.0, 60.0, self.view.bounds.size.width - 120.0, 40.0);
     sureBtn.backgroundColor = [UIColor blueColor];
     sureBtn.layer.cornerRadius = 5.0;
     sureBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     [sureBtn setTitle:@"确认支付" forState:UIControlStateNormal];
-    [sureBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [sureBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [sureBtn addTarget:self action:@selector(sureBtnAction:) forControlEvents:UIControlEventTouchUpInside];
     [footerView addSubview:sureBtn];
     self.tableView.tableFooterView = footerView;
 }
 
 - (void)sureBtnAction:(UIButton *)btn {
-    
+    if (self.paymentStyle == MZPaymentStyleAlipay) {
+        
+    } else if (self.paymentStyle == MZPaymentStyleWxpay) {
+        
+    }
+}
+
+#pragma mark - UITableViewDelegate, UITableViewDataSource
+- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSource.count;
+}
+
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    MZPaymentStyleCell *cell = [tableView dequeueReusableCellWithIdentifier:@"paymentStyleCellId" forIndexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    [cell updateImageName:self.dataSource[indexPath.row][@"image"] title:self.dataSource[indexPath.row][@"title"]];
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    MZPaymentStyleCell *selectedCell = [tableView cellForRowAtIndexPath:self.selectedIndexPath];
+    MZPaymentStyleCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    self.selectedIndexPath = indexPath;
+    selectedCell.selected = NO;
+    cell.selected = YES;
+    if (indexPath.row == 0) {
+        self.paymentStyle = MZPaymentStyleAlipay;
+    } else if (indexPath.row == 1) {
+        self.paymentStyle = MZPaymentStyleWxpay;
+    }
 }
 
 @end

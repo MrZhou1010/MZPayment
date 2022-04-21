@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MZPaymentStyleCell : UITableViewCell
 
+- (void)updateImageName:(NSString *)imageName title:(NSString *)title;
+
 @end
 
 NS_ASSUME_NONNULL_END

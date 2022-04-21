@@ -7,6 +7,8 @@
 
 #import "MZPaymentManager.h"
 #import "MZPaymentConfig.h"
+#import <AliPaySDK/AliPaySDK.h>
+#import <WechatOpenSDK/WXApi.h>
 
 @interface MZPaymentManager() <WXApiDelegate>
 
@@ -14,13 +16,14 @@
 
 @implementation MZPaymentManager
 
+#pragma mark - 单例
 + (instancetype)shareInstance {
-    static MZPaymentManager *paymentManager = nil;
+    static MZPaymentManager *_instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        paymentManager = [[MZPaymentManager alloc] init];
+        _instance = [[MZPaymentManager alloc] init];
     });
-    return paymentManager;
+    return _instance;
 }
 
 #pragma mark - 微信SDK
@@ -28,7 +31,7 @@
     return [WXApi registerApp:wxAppId universalLink:wxUniversalLink];
 }
 
-+ (BOOL)isWXAppInstalled {
++ (BOOL)isWxAppInstalled {
     return [WXApi isWXAppInstalled];
 }
 
@@ -40,8 +43,14 @@
     return [WXApi handleOpenUniversalLink:userActivity delegate:[MZPaymentManager shareInstance]];
 }
 
-+ (void)sendWXPaymentOrder:(NSDictionary *)orderDic callback:(void (^ __nullable)(BOOL success))completionBlock {
++ (void)sendWxPaymentOrder:(NSDictionary *)orderDic callback:(void (^ __nullable)(BOOL success))completionBlock {
     PayReq *payReq = [[PayReq alloc] init];
+    payReq.partnerId = orderDic[@"partnerid"];
+    payReq.prepayId = orderDic[@"prepayid"];
+    payReq.nonceStr = orderDic[@"noncestr"];
+    payReq.timeStamp = [orderDic[@"timestamp"] intValue];
+    payReq.package = orderDic[@"package"];
+    payReq.sign = orderDic[@"sign"];
     [WXApi sendReq:payReq completion:completionBlock];
 }
 
@@ -75,11 +84,11 @@
 }
 
 #pragma mark - 支付宝SDK
-+ (void)processOrderWithPaymentResult:(NSURL *)url standbyCallback:(CompletionBlock)completionBlock {
++ (void)processOrderWithPaymentResult:(NSURL *)url standbyCallback:(void (^ __nullable)(NSDictionary *resultDic))completionBlock {
     [[AlipaySDK defaultService] processOrderWithPaymentResult:url standbyCallback:completionBlock];
 }
 
-+ (void)processAuthResult:(NSURL *)url auth:(AlipayAuthVersion)alipayAuth standbyCallback:(CompletionBlock)completionBlock {
++ (void)processAuthResult:(NSURL *)url auth:(AlipayAuthVersion)alipayAuth standbyCallback:(void (^ __nullable)(NSDictionary *resultDic))completionBlock {
     switch (alipayAuth) {
         case AlipayAuthV1:
             [[AlipaySDK defaultService] processAuthResult:url standbyCallback:completionBlock];
@@ -92,7 +101,7 @@
     }
 }
 
-+ (void)sendAliPaymentOrder:(NSString *)orderString auth:(AlipayAuthVersion)alipayAuth callback:(CompletionBlock)completionBlock {
++ (void)sendAliPaymentOrder:(NSString *)orderString auth:(AlipayAuthVersion)alipayAuth callback:(void (^ __nullable)(NSDictionary *resultDic))completionBlock {
     switch (alipayAuth) {
         case AlipayAuthV1:
             [[AlipaySDK defaultService] payOrder:orderString fromScheme:aliAppId callback:completionBlock];

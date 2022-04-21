@@ -6,8 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AliPaySDK/AliPaySDK.h>
-#import <WechatOpenSDK/WXApi.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +16,7 @@ typedef NS_ENUM(NSInteger, AlipayAuthVersion) {
 
 @interface MZPaymentManager : NSObject
 
+/// 单例
 + (instancetype)shareInstance;
 
 /*! @brief 向微信终端程序注册第三方应用
@@ -30,7 +29,7 @@ typedef NS_ENUM(NSInteger, AlipayAuthVersion) {
  *
  * @return 微信已安装返回YES,未安装返回NO
  */
-+ (BOOL)isWXAppInstalled;
++ (BOOL)isWxAppInstalled;
 
 /*! @brief 微信通过URL启动App时传递的数据
  *
@@ -53,14 +52,14 @@ typedef NS_ENUM(NSInteger, AlipayAuthVersion) {
  *  @param orderDic 支付订单信息
  *  @param completionBlock 支付结果回调Block,用于支付结果回调
  */
-+ (void)sendWXPaymentOrder:(NSDictionary *)orderDic callback:(void (^ __nullable)(BOOL success))completionBlock;
++ (void)sendWxPaymentOrder:(NSDictionary *)orderDic callback:(void (^ __nullable)(BOOL success))completionBlock;
 
 /*! @brief 处理支付宝支付后跳回商户携带的支付结果URL
  *
  *  @param url 支付宝返回的支付结果URL
  *  @param completionBlock 支付结果回调,为nil时默认使用支付接口的completionBlock
  */
-+ (void)processOrderWithPaymentResult:(NSURL *)url standbyCallback:(CompletionBlock)completionBlock;
++ (void)processOrderWithPaymentResult:(NSURL *)url standbyCallback:(void (^ __nullable)(NSDictionary *resultDic))completionBlock;
 
 /*! @brief 处理支付宝授权后跳回商户携带的授权结果URL
  *
@@ -68,15 +67,15 @@ typedef NS_ENUM(NSInteger, AlipayAuthVersion) {
  *  @param alipayAuth 支付宝授权版本
  *  @param completionBlock 授权结果回调,用于处理跳转支付宝授权过程中商户被系统终止的情况
  */
-+ (void)processAuthResult:(NSURL *)url auth:(AlipayAuthVersion)alipayAuth standbyCallback:(CompletionBlock)completionBlock;
++ (void)processAuthResult:(NSURL *)url auth:(AlipayAuthVersion)alipayAuth standbyCallback:(void (^ __nullable)(NSDictionary *resultDic))completionBlock;
 
 /*! @brief 支付接口
  *
  *  @param orderString 支付订单信息字串
  *  @param alipayAuth 支付宝授权版本
- *  @param completionBlock 支付结果回调Block,用于支付结果回调,跳转支付宝支付时只有当processOrderWithPaymentResult接口的completionBlock为nil时会使用这个bolock
+ *  @param completionBlock 支付结果回调Block,用于支付结果回调, 跳转支付宝支付时只有当processOrderWithPaymentResult接口的completionBlock为nil时会使用这个bolock
  */
-+ (void)sendAliPaymentOrder:(NSString *)orderString auth:(AlipayAuthVersion)alipayAuth callback:(CompletionBlock)completionBlock;
++ (void)sendAliPaymentOrder:(NSString *)orderString auth:(AlipayAuthVersion)alipayAuth callback:(void (^ __nullable)(NSDictionary *resultDic))completionBlock;
 
 @end
 

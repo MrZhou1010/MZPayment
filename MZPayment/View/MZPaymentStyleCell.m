@@ -55,15 +55,33 @@
     return _lineView;
 }
 
+#pragma mark - 初始化
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self setupUI];
+        [self setupViews];
     }
     return self;
 }
 
-- (void)setupUI {
-    
+- (void)setSelected:(BOOL)selected {
+    [super setSelected:selected];
+    self.selectedImageView.image = [UIImage imageNamed:selected ? @"icon_pay_selected": @"icon_pay_unSelected"];
+}
+
+- (void)setupViews {
+    self.iconImageView.frame = CGRectMake(16.0, 10.0, 20.0, 20.0);
+    self.titleLabel.frame = CGRectMake(56.0, 10.0, 120.0, 20.0);
+    self.selectedImageView.frame = CGRectMake(self.contentView.frame.size.width - 36.0, 10.0, 20.0, 20.0);
+    self.lineView.frame = CGRectMake(16.0, self.contentView.frame.size.height - 1.0, self.contentView.frame.size.width - 16.0, 1.0);
+    [self.contentView addSubview:self.iconImageView];
+    [self.contentView addSubview:self.titleLabel];
+    [self.contentView addSubview:self.selectedImageView];
+    [self.contentView addSubview:self.lineView];
+}
+
+- (void)updateImageName:(NSString *)imageName title:(NSString *)title {
+    self.iconImageView.image = [UIImage imageNamed:imageName];
+    self.titleLabel.text = title;
 }
 
 @end
